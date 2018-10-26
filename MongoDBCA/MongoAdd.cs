@@ -23,19 +23,6 @@ namespace MongoDBCA
 
             await collection.InsertOneAsync(object1);
 
-            var list = await collection.Find(x => x.Name == "Jack")
-                .ToListAsync();
-
-            foreach (var person in list)
-            {
-                Console.WriteLine(person.Name);
-            }
-
-            collection.DeleteOne(a => a._id == "5bd24d0a6dcb7ddff588d3ad");
-
-
-            collection = database.GetCollection<Object>("cars");
-
             var list2 = await collection.Find(x => x.Name == "Jack")
                 .ToListAsync();
 

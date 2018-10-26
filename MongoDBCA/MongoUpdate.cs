@@ -19,13 +19,14 @@ namespace MongoDBCA
 
             Object myObject = new Object
             {
-                Name = "John Biones Jones",
+                _id = "5bd24e2933a913192826cab8",
+                Name = "Daniel DC Cormier",
                 Age = "29"
             };
 
             
 
-            var filter = Builders<Object>.Filter.Eq(s => s._id, "");
+            var filter = Builders<Object>.Filter.Eq(s => s._id, myObject._id);
             var result = await collection.ReplaceOneAsync(filter, myObject);
         }
        

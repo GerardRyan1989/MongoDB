@@ -7,7 +7,7 @@ namespace MongoDBCA
     public class MongoAdd
     {
 
-        public async void getDetails()
+        public async void Add()
         {
 
             var client = new MongoClient("mongodb://localhost:27017");
@@ -17,22 +17,11 @@ namespace MongoDBCA
 
             var object1 = new Object {
                 _id = ObjectId.GenerateNewId().ToString(), 
-                Name = "Gerard Ryan",
-                Age = "28"
+                Name = "Stephen WONDERBOY Thompson",
+                Age = "35"
             };
 
             await collection.InsertOneAsync(object1);
-
-            var list2 = await collection.Find(x => x.Name == "Jack")
-                .ToListAsync();
-
-            foreach (var person in list2)
-            {
-                Console.WriteLine(person.Name);
-            }
         }
-
-
-
     }
 }

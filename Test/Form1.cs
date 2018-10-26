@@ -20,12 +20,10 @@ namespace Test
 
         private async void button1_Click(object sender, EventArgs e)
         {
-           
 
 
-            MongoRead read = new MongoRead();
 
-            await read.get();
+            
 
             
         }
@@ -33,6 +31,21 @@ namespace Test
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //MongoRead read = new MongoRead();
+
+            //await read.get();
+
+            //MongoUpdate update = new MongoUpdate();
+
+            //update.update();
+
+            MongoAdd add = new MongoAdd();
+
+            add.Add();
         }
     }
 }

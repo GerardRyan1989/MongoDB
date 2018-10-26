@@ -16,36 +16,78 @@ namespace Test
         public Form1()
         {
             InitializeComponent();
-        }
+            this.Size = new Size(1320, 1050);
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(25, 25);
 
-        private async void button1_Click(object sender, EventArgs e)
-        {
-
-
-
-            
-
-            
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
+            LoadPanels();
+            panelUpdate.Visible = false;
+            panelAdd.Visible = false;
+            panelRemove.Visible = false;
+            panelSearch2.Visible = false;
+            HomePanel.Visible = true;
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void pctClose_Click(object sender, EventArgs e)
         {
-            //MongoRead read = new MongoRead();
+            Close();
+        }
 
-            //await read.get();
+       
 
-            //MongoUpdate update = new MongoUpdate();
+        private void pctMinimize_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
 
-            //update.update();
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            panelAdd.Visible = false;
+            panelUpdate.Visible = true;
+        }
 
-            MongoAdd add = new MongoAdd();
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            panelAdd.Visible = true;
 
-            add.Add();
+            panelUpdate.Visible = false;
+            panelRemove.Visible = false;
+            panelSearch2.Visible = false;
+            HomePanel.Visible = false;
+
+        }
+
+
+
+        private void LoadPanels()
+        {
+          
+            panelAdd.Location = new Point(296, 70);
+            panelUpdate.Location = new Point(296, 70);
+            HomePanel.Location = new Point(296, 70);
+            panelRemove.Location = new Point(296, 70);
+            panelSearch2.Location = new Point(296, 70);
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            panelRemove.Visible = true;
+
+            panelUpdate.Visible = false;
+            panelAdd.Visible = false;
+            panelSearch2.Visible = false;
+            HomePanel.Visible = false;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            panelSearch2.Visible = true;
+
+            panelUpdate.Visible = false;
+            panelRemove.Visible = false;
+            panelAdd.Visible = false;
+            HomePanel.Visible = false;
         }
     }
 }

@@ -59,11 +59,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FightRecord.cs" />
+    <Compile Include="FightStyle.cs" />
     <Compile Include="MongoAdd.cs" />
     <Compile Include="MongoRead.cs" />
     <Compile Include="MongoRemove.cs" />
     <Compile Include="MongoUpdate.cs" />
-    <Compile Include="Object.cs" />
+    <Compile Include="FighterProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

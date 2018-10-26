@@ -28,35 +28,1434 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pctMinimize = new System.Windows.Forms.PictureBox();
+            this.pctClose = new System.Windows.Forms.PictureBox();
+            this.panelAdd = new System.Windows.Forms.Panel();
+            this.lblFightStyle = new System.Windows.Forms.Label();
+            this.txtFightStye = new System.Windows.Forms.TextBox();
+            this.BtnAddFigther = new System.Windows.Forms.Button();
+            this.lblLosses = new System.Windows.Forms.Label();
+            this.txtLosses = new System.Windows.Forms.TextBox();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.lblNickname = new System.Windows.Forms.Label();
+            this.txtNickName = new System.Windows.Forms.TextBox();
+            this.lblHeight = new System.Windows.Forms.Label();
+            this.txtHeight = new System.Windows.Forms.TextBox();
+            this.lblWin = new System.Windows.Forms.Label();
+            this.txtWins = new System.Windows.Forms.TextBox();
+            this.lblWeight = new System.Windows.Forms.Label();
+            this.txtWeight = new System.Windows.Forms.TextBox();
+            this.lblDraw = new System.Windows.Forms.Label();
+            this.txtDraws = new System.Windows.Forms.TextBox();
+            this.lblWeightClass = new System.Windows.Forms.Label();
+            this.txtWeightClass = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.HomePanel = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panelUpdate = new System.Windows.Forms.Panel();
+            this.lblUpdateSearch = new System.Windows.Forms.Label();
+            this.txtUpdateSearch = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtUpdateFightStyle = new System.Windows.Forms.TextBox();
+            this.btnUpdateFighter = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtUpdateLosses = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtUpdateAge = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtUpdateNickName = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtUpdateHeight = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtUpdateWins = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtUpdateWeight = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtUpdateDraws = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtUpdateWeightClass = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtUpdateName = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panelSearch2 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtSearchSearch = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtSearchFightStyle = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtSearchlosses = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtSearchAge = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtSearchNickName = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtSearchHeight = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtSearchWins = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtSearchWeight = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtSearchDraws = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.txtSearchWeightClass = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtSearchName = new System.Windows.Forms.TextBox();
+            this.panelRemove = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.txtRemoveSearch = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.txtRemoveFightStyle = new System.Windows.Forms.TextBox();
+            this.btnDeleteFighter = new System.Windows.Forms.Button();
+            this.label30 = new System.Windows.Forms.Label();
+            this.txtRemoveLosses = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.txtRemoveAge = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.txtRemoveNickName = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.txtRemoveheight = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.txtRemoveWins = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.txtRemoveWeight = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.txtRemoveDraws = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.txtRemoveWeightClass = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.txtRemoveName = new System.Windows.Forms.TextBox();
+            this.btnSearchFighter = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctClose)).BeginInit();
+            this.panelAdd.SuspendLayout();
+            this.HomePanel.SuspendLayout();
+            this.panelUpdate.SuspendLayout();
+            this.panelSearch2.SuspendLayout();
+            this.panelRemove.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // panel1
             // 
-            this.button1.Location = new System.Drawing.Point(665, 232);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 71);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.panel1.Controls.Add(this.btnAdd);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.btnUpdate);
+            this.panel1.Controls.Add(this.btnRemove);
+            this.panel1.Controls.Add(this.btnSearch);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(287, 1759);
+            this.panel1.TabIndex = 0;
             // 
-            // Form1
+            // btnAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 559);
-            this.Controls.Add(this.button1);
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(3, 3);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(287, 176);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.Text = "Add Fighter";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(3, 625);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(265, 176);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(0, 143);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(290, 176);
+            this.btnUpdate.TabIndex = 2;
+            this.btnUpdate.Text = "Update Fighter";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnRemove
+            // 
+            this.btnRemove.FlatAppearance.BorderSize = 0;
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.Location = new System.Drawing.Point(3, 307);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(281, 176);
+            this.btnRemove.TabIndex = 3;
+            this.btnRemove.Text = "Remove Figther";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(0, 468);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(284, 176);
+            this.btnSearch.TabIndex = 4;
+            this.btnSearch.Text = "Search fighter";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pctMinimize);
+            this.panel2.Controls.Add(this.pctClose);
+            this.panel2.Location = new System.Drawing.Point(293, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1049, 61);
+            this.panel2.TabIndex = 1;
+            // 
+            // pctMinimize
+            // 
+            this.pctMinimize.Image = ((System.Drawing.Image)(resources.GetObject("pctMinimize.Image")));
+            this.pctMinimize.ImageLocation = "";
+            this.pctMinimize.Location = new System.Drawing.Point(962, 3);
+            this.pctMinimize.Name = "pctMinimize";
+            this.pctMinimize.Size = new System.Drawing.Size(34, 29);
+            this.pctMinimize.TabIndex = 4;
+            this.pctMinimize.TabStop = false;
+            this.pctMinimize.Click += new System.EventHandler(this.pctMinimize_Click);
+            // 
+            // pctClose
+            // 
+            this.pctClose.Image = ((System.Drawing.Image)(resources.GetObject("pctClose.Image")));
+            this.pctClose.Location = new System.Drawing.Point(1002, 3);
+            this.pctClose.Name = "pctClose";
+            this.pctClose.Size = new System.Drawing.Size(34, 29);
+            this.pctClose.TabIndex = 2;
+            this.pctClose.TabStop = false;
+            this.pctClose.Click += new System.EventHandler(this.pctClose_Click);
+            // 
+            // panelAdd
+            // 
+            this.panelAdd.Controls.Add(this.lblFightStyle);
+            this.panelAdd.Controls.Add(this.txtFightStye);
+            this.panelAdd.Controls.Add(this.BtnAddFigther);
+            this.panelAdd.Controls.Add(this.lblLosses);
+            this.panelAdd.Controls.Add(this.txtLosses);
+            this.panelAdd.Controls.Add(this.lblAge);
+            this.panelAdd.Controls.Add(this.txtAge);
+            this.panelAdd.Controls.Add(this.lblNickname);
+            this.panelAdd.Controls.Add(this.txtNickName);
+            this.panelAdd.Controls.Add(this.lblHeight);
+            this.panelAdd.Controls.Add(this.txtHeight);
+            this.panelAdd.Controls.Add(this.lblWin);
+            this.panelAdd.Controls.Add(this.txtWins);
+            this.panelAdd.Controls.Add(this.lblWeight);
+            this.panelAdd.Controls.Add(this.txtWeight);
+            this.panelAdd.Controls.Add(this.lblDraw);
+            this.panelAdd.Controls.Add(this.txtDraws);
+            this.panelAdd.Controls.Add(this.lblWeightClass);
+            this.panelAdd.Controls.Add(this.txtWeightClass);
+            this.panelAdd.Controls.Add(this.lblName);
+            this.panelAdd.Controls.Add(this.txtName);
+            this.panelAdd.Location = new System.Drawing.Point(293, 73);
+            this.panelAdd.Name = "panelAdd";
+            this.panelAdd.Size = new System.Drawing.Size(1049, 918);
+            this.panelAdd.TabIndex = 0;
+            // 
+            // lblFightStyle
+            // 
+            this.lblFightStyle.AutoSize = true;
+            this.lblFightStyle.Location = new System.Drawing.Point(600, 452);
+            this.lblFightStyle.Name = "lblFightStyle";
+            this.lblFightStyle.Size = new System.Drawing.Size(171, 39);
+            this.lblFightStyle.TabIndex = 23;
+            this.lblFightStyle.Text = "FightStyle:";
+            // 
+            // txtFightStye
+            // 
+            this.txtFightStye.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtFightStye.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFightStye.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtFightStye.Location = new System.Drawing.Point(700, 450);
+            this.txtFightStye.Name = "txtFightStye";
+            this.txtFightStye.Size = new System.Drawing.Size(285, 47);
+            this.txtFightStye.TabIndex = 22;
+            // 
+            // BtnAddFigther
+            // 
+            this.BtnAddFigther.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAddFigther.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAddFigther.Location = new System.Drawing.Point(402, 552);
+            this.BtnAddFigther.Name = "BtnAddFigther";
+            this.BtnAddFigther.Size = new System.Drawing.Size(287, 176);
+            this.BtnAddFigther.TabIndex = 19;
+            this.BtnAddFigther.Text = "Add Fighter";
+            this.BtnAddFigther.UseVisualStyleBackColor = true;
+            // 
+            // lblLosses
+            // 
+            this.lblLosses.AutoSize = true;
+            this.lblLosses.Location = new System.Drawing.Point(95, 450);
+            this.lblLosses.Name = "lblLosses";
+            this.lblLosses.Size = new System.Drawing.Size(119, 39);
+            this.lblLosses.TabIndex = 18;
+            this.lblLosses.Text = "Losses:";
+            // 
+            // txtLosses
+            // 
+            this.txtLosses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtLosses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLosses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtLosses.Location = new System.Drawing.Point(169, 450);
+            this.txtLosses.Name = "txtLosses";
+            this.txtLosses.Size = new System.Drawing.Size(285, 47);
+            this.txtLosses.TabIndex = 17;
+            // 
+            // lblAge
+            // 
+            this.lblAge.AutoSize = true;
+            this.lblAge.Location = new System.Drawing.Point(110, 152);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(92, 39);
+            this.lblAge.TabIndex = 16;
+            this.lblAge.Text = "Age:";
+            // 
+            // txtAge
+            // 
+            this.txtAge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtAge.Location = new System.Drawing.Point(168, 150);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(285, 47);
+            this.txtAge.TabIndex = 15;
+            // 
+            // lblNickname
+            // 
+            this.lblNickname.AutoSize = true;
+            this.lblNickname.Location = new System.Drawing.Point(600, 52);
+            this.lblNickname.Name = "lblNickname";
+            this.lblNickname.Size = new System.Drawing.Size(191, 39);
+            this.lblNickname.TabIndex = 14;
+            this.lblNickname.Text = "NickName:";
+            // 
+            // txtNickName
+            // 
+            this.txtNickName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtNickName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNickName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtNickName.Location = new System.Drawing.Point(700, 50);
+            this.txtNickName.Name = "txtNickName";
+            this.txtNickName.Size = new System.Drawing.Size(285, 47);
+            this.txtNickName.TabIndex = 13;
+            // 
+            // lblHeight
+            // 
+            this.lblHeight.AutoSize = true;
+            this.lblHeight.Location = new System.Drawing.Point(580, 152);
+            this.lblHeight.Name = "lblHeight";
+            this.lblHeight.Size = new System.Drawing.Size(214, 39);
+            this.lblHeight.TabIndex = 12;
+            this.lblHeight.Text = "Height(Ft,In):";
+            // 
+            // txtHeight
+            // 
+            this.txtHeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtHeight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtHeight.Location = new System.Drawing.Point(700, 150);
+            this.txtHeight.Name = "txtHeight";
+            this.txtHeight.Size = new System.Drawing.Size(285, 47);
+            this.txtHeight.TabIndex = 11;
+            // 
+            // lblWin
+            // 
+            this.lblWin.AutoSize = true;
+            this.lblWin.Location = new System.Drawing.Point(110, 252);
+            this.lblWin.Name = "lblWin";
+            this.lblWin.Size = new System.Drawing.Size(95, 39);
+            this.lblWin.TabIndex = 10;
+            this.lblWin.Text = "Wins:";
+            // 
+            // txtWins
+            // 
+            this.txtWins.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtWins.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWins.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtWins.Location = new System.Drawing.Point(168, 250);
+            this.txtWins.Name = "txtWins";
+            this.txtWins.Size = new System.Drawing.Size(285, 47);
+            this.txtWins.TabIndex = 9;
+            // 
+            // lblWeight
+            // 
+            this.lblWeight.AutoSize = true;
+            this.lblWeight.Location = new System.Drawing.Point(555, 252);
+            this.lblWeight.Name = "lblWeight";
+            this.lblWeight.Size = new System.Drawing.Size(272, 39);
+            this.lblWeight.TabIndex = 8;
+            this.lblWeight.Text = "Weight(Pounds):";
+            // 
+            // txtWeight
+            // 
+            this.txtWeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWeight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtWeight.Location = new System.Drawing.Point(700, 250);
+            this.txtWeight.Name = "txtWeight";
+            this.txtWeight.Size = new System.Drawing.Size(285, 47);
+            this.txtWeight.TabIndex = 7;
+            // 
+            // lblDraw
+            // 
+            this.lblDraw.AutoSize = true;
+            this.lblDraw.Location = new System.Drawing.Point(95, 352);
+            this.lblDraw.Name = "lblDraw";
+            this.lblDraw.Size = new System.Drawing.Size(122, 39);
+            this.lblDraw.TabIndex = 6;
+            this.lblDraw.Text = "Draws:";
+            // 
+            // txtDraws
+            // 
+            this.txtDraws.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtDraws.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDraws.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtDraws.Location = new System.Drawing.Point(168, 350);
+            this.txtDraws.Name = "txtDraws";
+            this.txtDraws.Size = new System.Drawing.Size(285, 47);
+            this.txtDraws.TabIndex = 5;
+            // 
+            // lblWeightClass
+            // 
+            this.lblWeightClass.AutoSize = true;
+            this.lblWeightClass.Location = new System.Drawing.Point(580, 350);
+            this.lblWeightClass.Name = "lblWeightClass";
+            this.lblWeightClass.Size = new System.Drawing.Size(223, 39);
+            this.lblWeightClass.TabIndex = 4;
+            this.lblWeightClass.Text = "Weight Class:";
+            // 
+            // txtWeightClass
+            // 
+            this.txtWeightClass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtWeightClass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWeightClass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtWeightClass.Location = new System.Drawing.Point(700, 350);
+            this.txtWeightClass.Name = "txtWeightClass";
+            this.txtWeightClass.Size = new System.Drawing.Size(285, 47);
+            this.txtWeightClass.TabIndex = 3;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(100, 52);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(123, 39);
+            this.lblName.TabIndex = 2;
+            this.lblName.Text = "Name:";
+            // 
+            // txtName
+            // 
+            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtName.Location = new System.Drawing.Point(168, 50);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(285, 47);
+            this.txtName.TabIndex = 1;
+            // 
+            // HomePanel
+            // 
+            this.HomePanel.Controls.Add(this.label13);
+            this.HomePanel.Controls.Add(this.label12);
+            this.HomePanel.Controls.Add(this.label11);
+            this.HomePanel.Location = new System.Drawing.Point(1385, 1014);
+            this.HomePanel.Name = "HomePanel";
+            this.HomePanel.Size = new System.Drawing.Size(1032, 824);
+            this.HomePanel.TabIndex = 19;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(134, 374);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(673, 157);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "Database";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(222, 217);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(482, 157);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Fighter";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(329, 44);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(310, 157);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "UFC";
+            // 
+            // panelUpdate
+            // 
+            this.panelUpdate.Controls.Add(this.label15);
+            this.panelUpdate.Controls.Add(this.lblUpdateSearch);
+            this.panelUpdate.Controls.Add(this.txtUpdateSearch);
+            this.panelUpdate.Controls.Add(this.label1);
+            this.panelUpdate.Controls.Add(this.txtUpdateFightStyle);
+            this.panelUpdate.Controls.Add(this.btnUpdateFighter);
+            this.panelUpdate.Controls.Add(this.label2);
+            this.panelUpdate.Controls.Add(this.txtUpdateLosses);
+            this.panelUpdate.Controls.Add(this.label3);
+            this.panelUpdate.Controls.Add(this.txtUpdateAge);
+            this.panelUpdate.Controls.Add(this.label4);
+            this.panelUpdate.Controls.Add(this.txtUpdateNickName);
+            this.panelUpdate.Controls.Add(this.label5);
+            this.panelUpdate.Controls.Add(this.txtUpdateHeight);
+            this.panelUpdate.Controls.Add(this.label6);
+            this.panelUpdate.Controls.Add(this.txtUpdateWins);
+            this.panelUpdate.Controls.Add(this.label7);
+            this.panelUpdate.Controls.Add(this.txtUpdateWeight);
+            this.panelUpdate.Controls.Add(this.label8);
+            this.panelUpdate.Controls.Add(this.txtUpdateDraws);
+            this.panelUpdate.Controls.Add(this.label9);
+            this.panelUpdate.Controls.Add(this.txtUpdateWeightClass);
+            this.panelUpdate.Controls.Add(this.label10);
+            this.panelUpdate.Controls.Add(this.txtUpdateName);
+            this.panelUpdate.Location = new System.Drawing.Point(1385, 73);
+            this.panelUpdate.Name = "panelUpdate";
+            this.panelUpdate.Size = new System.Drawing.Size(1049, 918);
+            this.panelUpdate.TabIndex = 24;
+            // 
+            // lblUpdateSearch
+            // 
+            this.lblUpdateSearch.AutoSize = true;
+            this.lblUpdateSearch.Location = new System.Drawing.Point(80, 11);
+            this.lblUpdateSearch.Name = "lblUpdateSearch";
+            this.lblUpdateSearch.Size = new System.Drawing.Size(136, 39);
+            this.lblUpdateSearch.TabIndex = 25;
+            this.lblUpdateSearch.Text = "Search:";
+            // 
+            // txtUpdateSearch
+            // 
+            this.txtUpdateSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtUpdateSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUpdateSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtUpdateSearch.Location = new System.Drawing.Point(153, 9);
+            this.txtUpdateSearch.Name = "txtUpdateSearch";
+            this.txtUpdateSearch.Size = new System.Drawing.Size(285, 47);
+            this.txtUpdateSearch.TabIndex = 24;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(585, 512);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(171, 39);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "FightStyle:";
+            // 
+            // txtUpdateFightStyle
+            // 
+            this.txtUpdateFightStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtUpdateFightStyle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUpdateFightStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtUpdateFightStyle.Location = new System.Drawing.Point(685, 510);
+            this.txtUpdateFightStyle.Name = "txtUpdateFightStyle";
+            this.txtUpdateFightStyle.Size = new System.Drawing.Size(285, 47);
+            this.txtUpdateFightStyle.TabIndex = 22;
+            // 
+            // btnUpdateFighter
+            // 
+            this.btnUpdateFighter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateFighter.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateFighter.Location = new System.Drawing.Point(389, 569);
+            this.btnUpdateFighter.Name = "btnUpdateFighter";
+            this.btnUpdateFighter.Size = new System.Drawing.Size(287, 176);
+            this.btnUpdateFighter.TabIndex = 19;
+            this.btnUpdateFighter.Text = "Update Figther";
+            this.btnUpdateFighter.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(80, 510);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(119, 39);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Losses:";
+            // 
+            // txtUpdateLosses
+            // 
+            this.txtUpdateLosses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtUpdateLosses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUpdateLosses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtUpdateLosses.Location = new System.Drawing.Point(154, 510);
+            this.txtUpdateLosses.Name = "txtUpdateLosses";
+            this.txtUpdateLosses.Size = new System.Drawing.Size(285, 47);
+            this.txtUpdateLosses.TabIndex = 17;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(95, 212);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 39);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Age:";
+            // 
+            // txtUpdateAge
+            // 
+            this.txtUpdateAge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtUpdateAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUpdateAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtUpdateAge.Location = new System.Drawing.Point(153, 210);
+            this.txtUpdateAge.Name = "txtUpdateAge";
+            this.txtUpdateAge.Size = new System.Drawing.Size(285, 47);
+            this.txtUpdateAge.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(585, 112);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(191, 39);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "NickName:";
+            // 
+            // txtUpdateNickName
+            // 
+            this.txtUpdateNickName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtUpdateNickName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUpdateNickName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtUpdateNickName.Location = new System.Drawing.Point(685, 110);
+            this.txtUpdateNickName.Name = "txtUpdateNickName";
+            this.txtUpdateNickName.Size = new System.Drawing.Size(285, 47);
+            this.txtUpdateNickName.TabIndex = 13;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(565, 212);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(214, 39);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Height(Ft,In):";
+            // 
+            // txtUpdateHeight
+            // 
+            this.txtUpdateHeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtUpdateHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUpdateHeight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtUpdateHeight.Location = new System.Drawing.Point(685, 210);
+            this.txtUpdateHeight.Name = "txtUpdateHeight";
+            this.txtUpdateHeight.Size = new System.Drawing.Size(285, 47);
+            this.txtUpdateHeight.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(95, 312);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 39);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Wins:";
+            // 
+            // txtUpdateWins
+            // 
+            this.txtUpdateWins.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtUpdateWins.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUpdateWins.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtUpdateWins.Location = new System.Drawing.Point(153, 310);
+            this.txtUpdateWins.Name = "txtUpdateWins";
+            this.txtUpdateWins.Size = new System.Drawing.Size(285, 47);
+            this.txtUpdateWins.TabIndex = 9;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(540, 312);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(272, 39);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Weight(Pounds):";
+            // 
+            // txtUpdateWeight
+            // 
+            this.txtUpdateWeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtUpdateWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUpdateWeight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtUpdateWeight.Location = new System.Drawing.Point(685, 312);
+            this.txtUpdateWeight.Name = "txtUpdateWeight";
+            this.txtUpdateWeight.Size = new System.Drawing.Size(285, 47);
+            this.txtUpdateWeight.TabIndex = 7;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(80, 412);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(122, 39);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "Draws:";
+            // 
+            // txtUpdateDraws
+            // 
+            this.txtUpdateDraws.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtUpdateDraws.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUpdateDraws.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtUpdateDraws.Location = new System.Drawing.Point(153, 410);
+            this.txtUpdateDraws.Name = "txtUpdateDraws";
+            this.txtUpdateDraws.Size = new System.Drawing.Size(285, 47);
+            this.txtUpdateDraws.TabIndex = 5;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(565, 410);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(223, 39);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Weight Class:";
+            // 
+            // txtUpdateWeightClass
+            // 
+            this.txtUpdateWeightClass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtUpdateWeightClass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUpdateWeightClass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtUpdateWeightClass.Location = new System.Drawing.Point(685, 410);
+            this.txtUpdateWeightClass.Name = "txtUpdateWeightClass";
+            this.txtUpdateWeightClass.Size = new System.Drawing.Size(285, 47);
+            this.txtUpdateWeightClass.TabIndex = 3;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(85, 112);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(123, 39);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Name:";
+            // 
+            // txtUpdateName
+            // 
+            this.txtUpdateName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtUpdateName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUpdateName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtUpdateName.Location = new System.Drawing.Point(153, 110);
+            this.txtUpdateName.Name = "txtUpdateName";
+            this.txtUpdateName.Size = new System.Drawing.Size(285, 47);
+            this.txtUpdateName.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(455, 11);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(464, 48);
+            this.label15.TabIndex = 26;
+            this.label15.Text = "Please enter the first name and lastname of \r\nthe fighter you wish to search for";
+            // 
+            // panelSearch2
+            // 
+            this.panelSearch2.Controls.Add(this.btnSearchFighter);
+            this.panelSearch2.Controls.Add(this.label14);
+            this.panelSearch2.Controls.Add(this.label16);
+            this.panelSearch2.Controls.Add(this.txtSearchSearch);
+            this.panelSearch2.Controls.Add(this.label17);
+            this.panelSearch2.Controls.Add(this.txtSearchFightStyle);
+            this.panelSearch2.Controls.Add(this.label18);
+            this.panelSearch2.Controls.Add(this.txtSearchlosses);
+            this.panelSearch2.Controls.Add(this.label19);
+            this.panelSearch2.Controls.Add(this.txtSearchAge);
+            this.panelSearch2.Controls.Add(this.label20);
+            this.panelSearch2.Controls.Add(this.txtSearchNickName);
+            this.panelSearch2.Controls.Add(this.label21);
+            this.panelSearch2.Controls.Add(this.txtSearchHeight);
+            this.panelSearch2.Controls.Add(this.label22);
+            this.panelSearch2.Controls.Add(this.txtSearchWins);
+            this.panelSearch2.Controls.Add(this.label23);
+            this.panelSearch2.Controls.Add(this.txtSearchWeight);
+            this.panelSearch2.Controls.Add(this.label24);
+            this.panelSearch2.Controls.Add(this.txtSearchDraws);
+            this.panelSearch2.Controls.Add(this.label25);
+            this.panelSearch2.Controls.Add(this.txtSearchWeightClass);
+            this.panelSearch2.Controls.Add(this.label26);
+            this.panelSearch2.Controls.Add(this.txtSearchName);
+            this.panelSearch2.Location = new System.Drawing.Point(293, 1014);
+            this.panelSearch2.Name = "panelSearch2";
+            this.panelSearch2.Size = new System.Drawing.Size(1049, 918);
+            this.panelSearch2.TabIndex = 27;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(455, 11);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(464, 48);
+            this.label14.TabIndex = 26;
+            this.label14.Text = "Please enter the first name and lastname of \r\nthe fighter you wish to search for";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(80, 11);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(136, 39);
+            this.label16.TabIndex = 25;
+            this.label16.Text = "Search:";
+            // 
+            // txtSearchSearch
+            // 
+            this.txtSearchSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtSearchSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtSearchSearch.Location = new System.Drawing.Point(153, 9);
+            this.txtSearchSearch.Name = "txtSearchSearch";
+            this.txtSearchSearch.Size = new System.Drawing.Size(285, 47);
+            this.txtSearchSearch.TabIndex = 24;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(585, 512);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(171, 39);
+            this.label17.TabIndex = 23;
+            this.label17.Text = "FightStyle:";
+            // 
+            // txtSearchFightStyle
+            // 
+            this.txtSearchFightStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtSearchFightStyle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchFightStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtSearchFightStyle.Location = new System.Drawing.Point(685, 510);
+            this.txtSearchFightStyle.Name = "txtSearchFightStyle";
+            this.txtSearchFightStyle.Size = new System.Drawing.Size(285, 47);
+            this.txtSearchFightStyle.TabIndex = 22;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(80, 510);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(119, 39);
+            this.label18.TabIndex = 18;
+            this.label18.Text = "Losses:";
+            // 
+            // txtSearchlosses
+            // 
+            this.txtSearchlosses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtSearchlosses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchlosses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtSearchlosses.Location = new System.Drawing.Point(154, 510);
+            this.txtSearchlosses.Name = "txtSearchlosses";
+            this.txtSearchlosses.Size = new System.Drawing.Size(285, 47);
+            this.txtSearchlosses.TabIndex = 17;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(95, 212);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(92, 39);
+            this.label19.TabIndex = 16;
+            this.label19.Text = "Age:";
+            // 
+            // txtSearchAge
+            // 
+            this.txtSearchAge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtSearchAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtSearchAge.Location = new System.Drawing.Point(153, 210);
+            this.txtSearchAge.Name = "txtSearchAge";
+            this.txtSearchAge.Size = new System.Drawing.Size(285, 47);
+            this.txtSearchAge.TabIndex = 15;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(585, 112);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(191, 39);
+            this.label20.TabIndex = 14;
+            this.label20.Text = "NickName:";
+            // 
+            // txtSearchNickName
+            // 
+            this.txtSearchNickName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtSearchNickName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchNickName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtSearchNickName.Location = new System.Drawing.Point(685, 110);
+            this.txtSearchNickName.Name = "txtSearchNickName";
+            this.txtSearchNickName.Size = new System.Drawing.Size(285, 47);
+            this.txtSearchNickName.TabIndex = 13;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(565, 212);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(214, 39);
+            this.label21.TabIndex = 12;
+            this.label21.Text = "Height(Ft,In):";
+            // 
+            // txtSearchHeight
+            // 
+            this.txtSearchHeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtSearchHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchHeight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtSearchHeight.Location = new System.Drawing.Point(685, 210);
+            this.txtSearchHeight.Name = "txtSearchHeight";
+            this.txtSearchHeight.Size = new System.Drawing.Size(285, 47);
+            this.txtSearchHeight.TabIndex = 11;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(95, 312);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(95, 39);
+            this.label22.TabIndex = 10;
+            this.label22.Text = "Wins:";
+            // 
+            // txtSearchWins
+            // 
+            this.txtSearchWins.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtSearchWins.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchWins.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtSearchWins.Location = new System.Drawing.Point(153, 310);
+            this.txtSearchWins.Name = "txtSearchWins";
+            this.txtSearchWins.Size = new System.Drawing.Size(285, 47);
+            this.txtSearchWins.TabIndex = 9;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(540, 312);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(272, 39);
+            this.label23.TabIndex = 8;
+            this.label23.Text = "Weight(Pounds):";
+            // 
+            // txtSearchWeight
+            // 
+            this.txtSearchWeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtSearchWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchWeight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtSearchWeight.Location = new System.Drawing.Point(685, 312);
+            this.txtSearchWeight.Name = "txtSearchWeight";
+            this.txtSearchWeight.Size = new System.Drawing.Size(285, 47);
+            this.txtSearchWeight.TabIndex = 7;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(80, 412);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(122, 39);
+            this.label24.TabIndex = 6;
+            this.label24.Text = "Draws:";
+            // 
+            // txtSearchDraws
+            // 
+            this.txtSearchDraws.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtSearchDraws.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchDraws.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtSearchDraws.Location = new System.Drawing.Point(153, 410);
+            this.txtSearchDraws.Name = "txtSearchDraws";
+            this.txtSearchDraws.Size = new System.Drawing.Size(285, 47);
+            this.txtSearchDraws.TabIndex = 5;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(565, 410);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(223, 39);
+            this.label25.TabIndex = 4;
+            this.label25.Text = "Weight Class:";
+            // 
+            // txtSearchWeightClass
+            // 
+            this.txtSearchWeightClass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtSearchWeightClass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchWeightClass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtSearchWeightClass.Location = new System.Drawing.Point(685, 410);
+            this.txtSearchWeightClass.Name = "txtSearchWeightClass";
+            this.txtSearchWeightClass.Size = new System.Drawing.Size(285, 47);
+            this.txtSearchWeightClass.TabIndex = 3;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(85, 112);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(123, 39);
+            this.label26.TabIndex = 2;
+            this.label26.Text = "Name:";
+            // 
+            // txtSearchName
+            // 
+            this.txtSearchName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtSearchName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtSearchName.Location = new System.Drawing.Point(153, 110);
+            this.txtSearchName.Name = "txtSearchName";
+            this.txtSearchName.Size = new System.Drawing.Size(285, 47);
+            this.txtSearchName.TabIndex = 1;
+            // 
+            // panelRemove
+            // 
+            this.panelRemove.Controls.Add(this.label27);
+            this.panelRemove.Controls.Add(this.label28);
+            this.panelRemove.Controls.Add(this.txtRemoveSearch);
+            this.panelRemove.Controls.Add(this.label29);
+            this.panelRemove.Controls.Add(this.txtRemoveFightStyle);
+            this.panelRemove.Controls.Add(this.btnDeleteFighter);
+            this.panelRemove.Controls.Add(this.label30);
+            this.panelRemove.Controls.Add(this.txtRemoveLosses);
+            this.panelRemove.Controls.Add(this.label31);
+            this.panelRemove.Controls.Add(this.txtRemoveAge);
+            this.panelRemove.Controls.Add(this.label32);
+            this.panelRemove.Controls.Add(this.txtRemoveNickName);
+            this.panelRemove.Controls.Add(this.label33);
+            this.panelRemove.Controls.Add(this.txtRemoveheight);
+            this.panelRemove.Controls.Add(this.label34);
+            this.panelRemove.Controls.Add(this.txtRemoveWins);
+            this.panelRemove.Controls.Add(this.label35);
+            this.panelRemove.Controls.Add(this.txtRemoveWeight);
+            this.panelRemove.Controls.Add(this.label36);
+            this.panelRemove.Controls.Add(this.txtRemoveDraws);
+            this.panelRemove.Controls.Add(this.label37);
+            this.panelRemove.Controls.Add(this.txtRemoveWeightClass);
+            this.panelRemove.Controls.Add(this.label38);
+            this.panelRemove.Controls.Add(this.txtRemoveName);
+            this.panelRemove.Location = new System.Drawing.Point(2458, 1014);
+            this.panelRemove.Name = "panelRemove";
+            this.panelRemove.Size = new System.Drawing.Size(1049, 918);
+            this.panelRemove.TabIndex = 27;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(455, 11);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(464, 48);
+            this.label27.TabIndex = 26;
+            this.label27.Text = "Please enter the first name and lastname of \r\nthe fighter you wish to search for";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(80, 11);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(136, 39);
+            this.label28.TabIndex = 25;
+            this.label28.Text = "Search:";
+            // 
+            // txtRemoveSearch
+            // 
+            this.txtRemoveSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtRemoveSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRemoveSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtRemoveSearch.Location = new System.Drawing.Point(153, 9);
+            this.txtRemoveSearch.Name = "txtRemoveSearch";
+            this.txtRemoveSearch.Size = new System.Drawing.Size(285, 47);
+            this.txtRemoveSearch.TabIndex = 24;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(585, 512);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(171, 39);
+            this.label29.TabIndex = 23;
+            this.label29.Text = "FightStyle:";
+            // 
+            // txtRemoveFightStyle
+            // 
+            this.txtRemoveFightStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtRemoveFightStyle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRemoveFightStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtRemoveFightStyle.Location = new System.Drawing.Point(685, 510);
+            this.txtRemoveFightStyle.Name = "txtRemoveFightStyle";
+            this.txtRemoveFightStyle.Size = new System.Drawing.Size(285, 47);
+            this.txtRemoveFightStyle.TabIndex = 22;
+            // 
+            // btnDeleteFighter
+            // 
+            this.btnDeleteFighter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteFighter.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteFighter.Location = new System.Drawing.Point(389, 569);
+            this.btnDeleteFighter.Name = "btnDeleteFighter";
+            this.btnDeleteFighter.Size = new System.Drawing.Size(287, 176);
+            this.btnDeleteFighter.TabIndex = 19;
+            this.btnDeleteFighter.Text = "Delete Figther";
+            this.btnDeleteFighter.UseVisualStyleBackColor = true;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(80, 510);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(119, 39);
+            this.label30.TabIndex = 18;
+            this.label30.Text = "Losses:";
+            // 
+            // txtRemoveLosses
+            // 
+            this.txtRemoveLosses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtRemoveLosses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRemoveLosses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtRemoveLosses.Location = new System.Drawing.Point(154, 510);
+            this.txtRemoveLosses.Name = "txtRemoveLosses";
+            this.txtRemoveLosses.Size = new System.Drawing.Size(285, 47);
+            this.txtRemoveLosses.TabIndex = 17;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(95, 212);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(92, 39);
+            this.label31.TabIndex = 16;
+            this.label31.Text = "Age:";
+            // 
+            // txtRemoveAge
+            // 
+            this.txtRemoveAge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtRemoveAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRemoveAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtRemoveAge.Location = new System.Drawing.Point(153, 210);
+            this.txtRemoveAge.Name = "txtRemoveAge";
+            this.txtRemoveAge.Size = new System.Drawing.Size(285, 47);
+            this.txtRemoveAge.TabIndex = 15;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(585, 112);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(191, 39);
+            this.label32.TabIndex = 14;
+            this.label32.Text = "NickName:";
+            // 
+            // txtRemoveNickName
+            // 
+            this.txtRemoveNickName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtRemoveNickName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRemoveNickName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtRemoveNickName.Location = new System.Drawing.Point(685, 110);
+            this.txtRemoveNickName.Name = "txtRemoveNickName";
+            this.txtRemoveNickName.Size = new System.Drawing.Size(285, 47);
+            this.txtRemoveNickName.TabIndex = 13;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(565, 212);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(214, 39);
+            this.label33.TabIndex = 12;
+            this.label33.Text = "Height(Ft,In):";
+            // 
+            // txtRemoveheight
+            // 
+            this.txtRemoveheight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtRemoveheight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRemoveheight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtRemoveheight.Location = new System.Drawing.Point(685, 210);
+            this.txtRemoveheight.Name = "txtRemoveheight";
+            this.txtRemoveheight.Size = new System.Drawing.Size(285, 47);
+            this.txtRemoveheight.TabIndex = 11;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(95, 312);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(95, 39);
+            this.label34.TabIndex = 10;
+            this.label34.Text = "Wins:";
+            // 
+            // txtRemoveWins
+            // 
+            this.txtRemoveWins.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtRemoveWins.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRemoveWins.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtRemoveWins.Location = new System.Drawing.Point(153, 310);
+            this.txtRemoveWins.Name = "txtRemoveWins";
+            this.txtRemoveWins.Size = new System.Drawing.Size(285, 47);
+            this.txtRemoveWins.TabIndex = 9;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(540, 312);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(272, 39);
+            this.label35.TabIndex = 8;
+            this.label35.Text = "Weight(Pounds):";
+            // 
+            // txtRemoveWeight
+            // 
+            this.txtRemoveWeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtRemoveWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRemoveWeight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtRemoveWeight.Location = new System.Drawing.Point(685, 312);
+            this.txtRemoveWeight.Name = "txtRemoveWeight";
+            this.txtRemoveWeight.Size = new System.Drawing.Size(285, 47);
+            this.txtRemoveWeight.TabIndex = 7;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(80, 412);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(122, 39);
+            this.label36.TabIndex = 6;
+            this.label36.Text = "Draws:";
+            // 
+            // txtRemoveDraws
+            // 
+            this.txtRemoveDraws.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtRemoveDraws.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRemoveDraws.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtRemoveDraws.Location = new System.Drawing.Point(153, 410);
+            this.txtRemoveDraws.Name = "txtRemoveDraws";
+            this.txtRemoveDraws.Size = new System.Drawing.Size(285, 47);
+            this.txtRemoveDraws.TabIndex = 5;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(565, 410);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(223, 39);
+            this.label37.TabIndex = 4;
+            this.label37.Text = "Weight Class:";
+            // 
+            // txtRemoveWeightClass
+            // 
+            this.txtRemoveWeightClass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtRemoveWeightClass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRemoveWeightClass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtRemoveWeightClass.Location = new System.Drawing.Point(685, 410);
+            this.txtRemoveWeightClass.Name = "txtRemoveWeightClass";
+            this.txtRemoveWeightClass.Size = new System.Drawing.Size(285, 47);
+            this.txtRemoveWeightClass.TabIndex = 3;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(85, 112);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(123, 39);
+            this.label38.TabIndex = 2;
+            this.label38.Text = "Name:";
+            // 
+            // txtRemoveName
+            // 
+            this.txtRemoveName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtRemoveName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRemoveName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtRemoveName.Location = new System.Drawing.Point(153, 110);
+            this.txtRemoveName.Name = "txtRemoveName";
+            this.txtRemoveName.Size = new System.Drawing.Size(285, 47);
+            this.txtRemoveName.TabIndex = 1;
+            // 
+            // btnSearchFighter
+            // 
+            this.btnSearchFighter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchFighter.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchFighter.Location = new System.Drawing.Point(389, 569);
+            this.btnSearchFighter.Name = "btnSearchFighter";
+            this.btnSearchFighter.Size = new System.Drawing.Size(287, 176);
+            this.btnSearchFighter.TabIndex = 27;
+            this.btnSearchFighter.Text = "Search";
+            this.btnSearchFighter.UseVisualStyleBackColor = true;
+            // 
+            // Form1;
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.ClientSize = new System.Drawing.Size(2884, 1759);
+            this.Controls.Add(this.panelRemove);
+            this.Controls.Add(this.panelSearch2);
+            this.Controls.Add(this.panelUpdate);
+            this.Controls.Add(this.HomePanel);
+            this.Controls.Add(this.panelAdd);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctClose)).EndInit();
+            this.panelAdd.ResumeLayout(false);
+            this.panelAdd.PerformLayout();
+            this.HomePanel.ResumeLayout(false);
+            this.HomePanel.PerformLayout();
+            this.panelUpdate.ResumeLayout(false);
+            this.panelUpdate.PerformLayout();
+            this.panelSearch2.ResumeLayout(false);
+            this.panelSearch2.PerformLayout();
+            this.panelRemove.ResumeLayout(false);
+            this.panelRemove.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pctClose;
+        private System.Windows.Forms.PictureBox pctMinimize;
+        private System.Windows.Forms.Panel panelAdd;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.Label lblNickname;
+        private System.Windows.Forms.TextBox txtNickName;
+        private System.Windows.Forms.Label lblHeight;
+        private System.Windows.Forms.TextBox txtHeight;
+        private System.Windows.Forms.Label lblWin;
+        private System.Windows.Forms.TextBox txtWins;
+        private System.Windows.Forms.Label lblWeight;
+        private System.Windows.Forms.TextBox txtWeight;
+        private System.Windows.Forms.Label lblDraw;
+        private System.Windows.Forms.TextBox txtDraws;
+        private System.Windows.Forms.Label lblWeightClass;
+        private System.Windows.Forms.TextBox txtWeightClass;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblLosses;
+        private System.Windows.Forms.TextBox txtLosses;
+        private System.Windows.Forms.Panel HomePanel;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button BtnAddFigther;
+        private System.Windows.Forms.Label lblFightStyle;
+        private System.Windows.Forms.TextBox txtFightStye;
+        private System.Windows.Forms.Panel panelUpdate;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtUpdateFightStyle;
+        private System.Windows.Forms.Button btnUpdateFighter;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtUpdateLosses;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtUpdateAge;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtUpdateNickName;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtUpdateHeight;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtUpdateWins;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtUpdateWeight;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtUpdateDraws;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtUpdateWeightClass;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtUpdateName;
+        private System.Windows.Forms.Label lblUpdateSearch;
+        private System.Windows.Forms.TextBox txtUpdateSearch;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Panel panelSearch2;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtSearchSearch;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtSearchFightStyle;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox txtSearchlosses;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox txtSearchAge;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox txtSearchNickName;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox txtSearchHeight;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox txtSearchWins;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox txtSearchWeight;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox txtSearchDraws;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox txtSearchWeightClass;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox txtSearchName;
+        private System.Windows.Forms.Panel panelRemove;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox txtRemoveSearch;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox txtRemoveFightStyle;
+        private System.Windows.Forms.Button btnDeleteFighter;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox txtRemoveLosses;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox txtRemoveAge;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox txtRemoveNickName;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox txtRemoveheight;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox txtRemoveWins;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TextBox txtRemoveWeight;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TextBox txtRemoveDraws;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.TextBox txtRemoveWeightClass;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.TextBox txtRemoveName;
+        private System.Windows.Forms.Button btnSearchFighter;
     }
 }
 

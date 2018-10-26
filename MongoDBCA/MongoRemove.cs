@@ -10,11 +10,11 @@ namespace MongoDBCA
     public class MongoRemove
     {
 
-        public async void Remove()
+        public void Remove()
         {
             var client = new MongoClient("mongodb://localhost:27017");
             var database = client.GetDatabase("cars");
-            var collection = database.GetCollection<Object>("cars");
+            var collection = database.GetCollection<FigtherProfile>("cars");
 
             collection.DeleteOne(a => a._id == "5bd24d0a6dcb7ddff588d3ad");
 

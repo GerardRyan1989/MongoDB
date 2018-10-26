@@ -14,19 +14,19 @@ namespace MongoDBCA
 
             var client = new MongoClient("mongodb://localhost:27017");
             var database = client.GetDatabase("cars");
-            var collection = database.GetCollection<Object>("cars");
+            var collection = database.GetCollection<FigtherProfile>("cars");
 
 
-            Object myObject = new Object
+            FigtherProfile myObject = new FigtherProfile
             {
                 _id = "5bd24e2933a913192826cab8",
                 Name = "Daniel DC Cormier",
-                Age = "29"
+                Age = 29
             };
 
             
 
-            var filter = Builders<Object>.Filter.Eq(s => s._id, myObject._id);
+            var filter = Builders<FigtherProfile>.Filter.Eq(s => s._id, myObject._id);
             var result = await collection.ReplaceOneAsync(filter, myObject);
         }
        

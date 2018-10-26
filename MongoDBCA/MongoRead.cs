@@ -12,7 +12,7 @@ namespace MongoDBCA
     public class MongoRead
     {
 
-        public async Task<Object> get()
+        public async Task<FigtherProfile> get()
         {
 
             var client = new MongoClient("mongodb://localhost:27017");
@@ -25,7 +25,7 @@ namespace MongoDBCA
 
             var returned = (await collection.Find(filter).ToListAsync()).FirstOrDefault();
 
-            var result = BsonSerializer.Deserialize<Object>(returned);
+            var result = BsonSerializer.Deserialize<FigtherProfile>(returned);
           
             //initial commit
 

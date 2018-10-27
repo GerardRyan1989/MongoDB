@@ -279,5 +279,160 @@ namespace Test
             }
             
         }
+
+
+
+        //allow moveable ui]
+
+        int mouseX= 0;
+        int mouseY = 0;
+        bool mouseDown;
+
+        private void MongoUI_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+        }
+
+        private void MongoUI_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(mouseDown == true)
+            {
+                mouseX = MousePosition.X - 200;
+                mouseY = MousePosition.Y - 40;
+
+                this.SetDesktopLocation(mouseX, mouseY);
+            }
+        }
+
+        private void MongoUI_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+        private void panelAdd_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+        private void panelAdd_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+        }
+
+        private void panelAdd_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown == true)
+            {
+                mouseX = MousePosition.X - 200;
+                mouseY = MousePosition.Y - 40;
+
+                this.SetDesktopLocation(mouseX, mouseY);
+            }
+        }
+
+        private void panelUpdate_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+        }
+
+        private void panelUpdate_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown == true)
+            {
+                mouseX = MousePosition.X - 200;
+                mouseY = MousePosition.Y - 40;
+
+                this.SetDesktopLocation(mouseX, mouseY);
+            }
+        }
+
+        private void panelUpdate_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+        private void panelSearch2_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+        }
+
+        private void panelSearch2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown == true)
+            {
+                mouseX = MousePosition.X - 200;
+                mouseY = MousePosition.Y - 40;
+
+                this.SetDesktopLocation(mouseX, mouseY);
+            }
+        }
+
+        private void panelSearch2_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+        private void panelRemove_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+        }
+
+        private void panelRemove_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown == true)
+            {
+                mouseX = MousePosition.X - 200;
+                mouseY = MousePosition.Y - 40;
+
+                this.SetDesktopLocation(mouseX, mouseY);
+            }
+        }
+
+        private void panelRemove_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+        private void HomePanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+        }
+
+        private void HomePanel_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+        private void HomePanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown == true)
+            {
+                mouseX = MousePosition.X - 200;
+                mouseY = MousePosition.Y - 40;
+
+                this.SetDesktopLocation(mouseX, mouseY);
+            }
+        }
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+        }
+
+        private void panel2_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+        private void panel2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown == true)
+            {
+                mouseX = MousePosition.X - 200;
+                mouseY = MousePosition.Y - 40;
+
+                this.SetDesktopLocation(mouseX, mouseY);
+            }
+        }
     }
 }

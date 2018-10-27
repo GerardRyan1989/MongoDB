@@ -9,25 +9,15 @@ namespace MongoDBCA
 {
     public class MongoUpdate
     {
-        public async void update()
+        public async void updateFighter(FighterProfile fighter)
         {
 
             var client = new MongoClient("mongodb://localhost:27017");
             var database = client.GetDatabase("cars");
-            var collection = database.GetCollection<FigtherProfile>("cars");
+            var collection = database.GetCollection<FighterProfile>("cars");
 
-
-            FigtherProfile myObject = new FigtherProfile
-            {
-                _id = "5bd24e2933a913192826cab8",
-                Name = "Daniel DC Cormier",
-                Age = 29
-            };
-
-            
-
-            var filter = Builders<FigtherProfile>.Filter.Eq(s => s._id, myObject._id);
-            var result = await collection.ReplaceOneAsync(filter, myObject);
+            var filter = Builders<FighterProfile>.Filter.Eq(s => s._id, fighter._id);
+            var result = await collection.ReplaceOneAsync(filter, fighter);
         }
        
     }

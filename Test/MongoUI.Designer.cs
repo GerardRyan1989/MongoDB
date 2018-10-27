@@ -1,6 +1,6 @@
 ﻿namespace Test
 {
-    partial class Form1
+    partial class MongoUI
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MongoUI));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -65,8 +65,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panelUpdate = new System.Windows.Forms.Panel();
-            this.lblUpdateSearch = new System.Windows.Forms.Label();
-            this.txtUpdateSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtUpdateFightStyle = new System.Windows.Forms.TextBox();
             this.btnUpdateFighter = new System.Windows.Forms.Button();
@@ -88,11 +86,13 @@
             this.txtUpdateWeightClass = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtUpdateName = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.panelSearch2 = new System.Windows.Forms.Panel();
+            this.lblSearchlastName = new System.Windows.Forms.Label();
+            this.txtSearchLastName = new System.Windows.Forms.TextBox();
+            this.btnSearchFighter = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txtSearchSearch = new System.Windows.Forms.TextBox();
+            this.lblSearchFirstName = new System.Windows.Forms.Label();
+            this.txtSearchFirstName = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.txtSearchFightStyle = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -114,9 +114,6 @@
             this.label26 = new System.Windows.Forms.Label();
             this.txtSearchName = new System.Windows.Forms.TextBox();
             this.panelRemove = new System.Windows.Forms.Panel();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.txtRemoveSearch = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.txtRemoveFightStyle = new System.Windows.Forms.TextBox();
             this.btnDeleteFighter = new System.Windows.Forms.Button();
@@ -138,7 +135,19 @@
             this.txtRemoveWeightClass = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.txtRemoveName = new System.Windows.Forms.TextBox();
-            this.btnSearchFighter = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtUpdateLastName = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.txtUpdateFirstName = new System.Windows.Forms.TextBox();
+            this.btnUpdateSearch = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txtRemoveSearch = new System.Windows.Forms.Button();
+            this.label28 = new System.Windows.Forms.Label();
+            this.txtremoveLastName = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.txtremoveFirstName = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctMinimize)).BeginInit();
@@ -314,6 +323,7 @@
             this.BtnAddFigther.TabIndex = 19;
             this.BtnAddFigther.Text = "Add Fighter";
             this.BtnAddFigther.UseVisualStyleBackColor = true;
+            this.BtnAddFigther.Click += new System.EventHandler(this.BtnAddFigther_Click);
             // 
             // lblLosses
             // 
@@ -491,7 +501,7 @@
             this.HomePanel.Controls.Add(this.label13);
             this.HomePanel.Controls.Add(this.label12);
             this.HomePanel.Controls.Add(this.label11);
-            this.HomePanel.Location = new System.Drawing.Point(1385, 1014);
+            this.HomePanel.Location = new System.Drawing.Point(2529, 1025);
             this.HomePanel.Name = "HomePanel";
             this.HomePanel.Size = new System.Drawing.Size(1032, 824);
             this.HomePanel.TabIndex = 19;
@@ -528,9 +538,12 @@
             // 
             // panelUpdate
             // 
+            this.panelUpdate.Controls.Add(this.btnUpdateSearch);
             this.panelUpdate.Controls.Add(this.label15);
-            this.panelUpdate.Controls.Add(this.lblUpdateSearch);
-            this.panelUpdate.Controls.Add(this.txtUpdateSearch);
+            this.panelUpdate.Controls.Add(this.txtUpdateLastName);
+            this.panelUpdate.Controls.Add(this.label16);
+            this.panelUpdate.Controls.Add(this.label39);
+            this.panelUpdate.Controls.Add(this.txtUpdateFirstName);
             this.panelUpdate.Controls.Add(this.label1);
             this.panelUpdate.Controls.Add(this.txtUpdateFightStyle);
             this.panelUpdate.Controls.Add(this.btnUpdateFighter);
@@ -556,25 +569,6 @@
             this.panelUpdate.Name = "panelUpdate";
             this.panelUpdate.Size = new System.Drawing.Size(1049, 918);
             this.panelUpdate.TabIndex = 24;
-            // 
-            // lblUpdateSearch
-            // 
-            this.lblUpdateSearch.AutoSize = true;
-            this.lblUpdateSearch.Location = new System.Drawing.Point(80, 11);
-            this.lblUpdateSearch.Name = "lblUpdateSearch";
-            this.lblUpdateSearch.Size = new System.Drawing.Size(136, 39);
-            this.lblUpdateSearch.TabIndex = 25;
-            this.lblUpdateSearch.Text = "Search:";
-            // 
-            // txtUpdateSearch
-            // 
-            this.txtUpdateSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.txtUpdateSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUpdateSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
-            this.txtUpdateSearch.Location = new System.Drawing.Point(153, 9);
-            this.txtUpdateSearch.Name = "txtUpdateSearch";
-            this.txtUpdateSearch.Size = new System.Drawing.Size(285, 47);
-            this.txtUpdateSearch.TabIndex = 24;
             // 
             // label1
             // 
@@ -605,6 +599,7 @@
             this.btnUpdateFighter.TabIndex = 19;
             this.btnUpdateFighter.Text = "Update Figther";
             this.btnUpdateFighter.UseVisualStyleBackColor = true;
+            this.btnUpdateFighter.Click += new System.EventHandler(this.btnUpdateFighter_Click);
             // 
             // label2
             // 
@@ -777,22 +772,14 @@
             this.txtUpdateName.Size = new System.Drawing.Size(285, 47);
             this.txtUpdateName.TabIndex = 1;
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(455, 11);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(464, 48);
-            this.label15.TabIndex = 26;
-            this.label15.Text = "Please enter the first name and lastname of \r\nthe fighter you wish to search for";
-            // 
             // panelSearch2
             // 
+            this.panelSearch2.Controls.Add(this.lblSearchlastName);
+            this.panelSearch2.Controls.Add(this.txtSearchLastName);
             this.panelSearch2.Controls.Add(this.btnSearchFighter);
             this.panelSearch2.Controls.Add(this.label14);
-            this.panelSearch2.Controls.Add(this.label16);
-            this.panelSearch2.Controls.Add(this.txtSearchSearch);
+            this.panelSearch2.Controls.Add(this.lblSearchFirstName);
+            this.panelSearch2.Controls.Add(this.txtSearchFirstName);
             this.panelSearch2.Controls.Add(this.label17);
             this.panelSearch2.Controls.Add(this.txtSearchFightStyle);
             this.panelSearch2.Controls.Add(this.label18);
@@ -818,34 +805,65 @@
             this.panelSearch2.Size = new System.Drawing.Size(1049, 918);
             this.panelSearch2.TabIndex = 27;
             // 
+            // lblSearchlastName
+            // 
+            this.lblSearchlastName.AutoSize = true;
+            this.lblSearchlastName.Location = new System.Drawing.Point(589, 11);
+            this.lblSearchlastName.Name = "lblSearchlastName";
+            this.lblSearchlastName.Size = new System.Drawing.Size(182, 39);
+            this.lblSearchlastName.TabIndex = 29;
+            this.lblSearchlastName.Text = "last Name:";
+            // 
+            // txtSearchLastName
+            // 
+            this.txtSearchLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtSearchLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtSearchLastName.Location = new System.Drawing.Point(685, 9);
+            this.txtSearchLastName.Name = "txtSearchLastName";
+            this.txtSearchLastName.Size = new System.Drawing.Size(285, 47);
+            this.txtSearchLastName.TabIndex = 28;
+            // 
+            // btnSearchFighter
+            // 
+            this.btnSearchFighter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchFighter.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchFighter.Location = new System.Drawing.Point(389, 569);
+            this.btnSearchFighter.Name = "btnSearchFighter";
+            this.btnSearchFighter.Size = new System.Drawing.Size(287, 176);
+            this.btnSearchFighter.TabIndex = 27;
+            this.btnSearchFighter.Text = "Search";
+            this.btnSearchFighter.UseVisualStyleBackColor = true;
+            this.btnSearchFighter.Click += new System.EventHandler(this.btnSearchFighter_Click);
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(455, 11);
+            this.label14.Location = new System.Drawing.Point(133, 50);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(464, 48);
             this.label14.TabIndex = 26;
             this.label14.Text = "Please enter the first name and lastname of \r\nthe fighter you wish to search for";
             // 
-            // label16
+            // lblSearchFirstName
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(80, 11);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(136, 39);
-            this.label16.TabIndex = 25;
-            this.label16.Text = "Search:";
+            this.lblSearchFirstName.AutoSize = true;
+            this.lblSearchFirstName.Location = new System.Drawing.Point(50, 9);
+            this.lblSearchFirstName.Name = "lblSearchFirstName";
+            this.lblSearchFirstName.Size = new System.Drawing.Size(187, 39);
+            this.lblSearchFirstName.TabIndex = 25;
+            this.lblSearchFirstName.Text = "First Name:";
             // 
-            // txtSearchSearch
+            // txtSearchFirstName
             // 
-            this.txtSearchSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.txtSearchSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSearchSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
-            this.txtSearchSearch.Location = new System.Drawing.Point(153, 9);
-            this.txtSearchSearch.Name = "txtSearchSearch";
-            this.txtSearchSearch.Size = new System.Drawing.Size(285, 47);
-            this.txtSearchSearch.TabIndex = 24;
+            this.txtSearchFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtSearchFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtSearchFirstName.Location = new System.Drawing.Point(153, 9);
+            this.txtSearchFirstName.Name = "txtSearchFirstName";
+            this.txtSearchFirstName.Size = new System.Drawing.Size(285, 47);
+            this.txtSearchFirstName.TabIndex = 24;
             // 
             // label17
             // 
@@ -1040,8 +1058,12 @@
             // panelRemove
             // 
             this.panelRemove.Controls.Add(this.label27);
-            this.panelRemove.Controls.Add(this.label28);
             this.panelRemove.Controls.Add(this.txtRemoveSearch);
+            this.panelRemove.Controls.Add(this.label28);
+            this.panelRemove.Controls.Add(this.txtremoveLastName);
+            this.panelRemove.Controls.Add(this.label40);
+            this.panelRemove.Controls.Add(this.label41);
+            this.panelRemove.Controls.Add(this.txtremoveFirstName);
             this.panelRemove.Controls.Add(this.label29);
             this.panelRemove.Controls.Add(this.txtRemoveFightStyle);
             this.panelRemove.Controls.Add(this.btnDeleteFighter);
@@ -1063,39 +1085,10 @@
             this.panelRemove.Controls.Add(this.txtRemoveWeightClass);
             this.panelRemove.Controls.Add(this.label38);
             this.panelRemove.Controls.Add(this.txtRemoveName);
-            this.panelRemove.Location = new System.Drawing.Point(2458, 1014);
+            this.panelRemove.Location = new System.Drawing.Point(1385, 1014);
             this.panelRemove.Name = "panelRemove";
             this.panelRemove.Size = new System.Drawing.Size(1049, 918);
             this.panelRemove.TabIndex = 27;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(455, 11);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(464, 48);
-            this.label27.TabIndex = 26;
-            this.label27.Text = "Please enter the first name and lastname of \r\nthe fighter you wish to search for";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(80, 11);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(136, 39);
-            this.label28.TabIndex = 25;
-            this.label28.Text = "Search:";
-            // 
-            // txtRemoveSearch
-            // 
-            this.txtRemoveSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.txtRemoveSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRemoveSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
-            this.txtRemoveSearch.Location = new System.Drawing.Point(153, 9);
-            this.txtRemoveSearch.Name = "txtRemoveSearch";
-            this.txtRemoveSearch.Size = new System.Drawing.Size(285, 47);
-            this.txtRemoveSearch.TabIndex = 24;
             // 
             // label29
             // 
@@ -1126,6 +1119,7 @@
             this.btnDeleteFighter.TabIndex = 19;
             this.btnDeleteFighter.Text = "Delete Figther";
             this.btnDeleteFighter.UseVisualStyleBackColor = true;
+            this.btnDeleteFighter.Click += new System.EventHandler(this.btnDeleteFighter_Click);
             // 
             // label30
             // 
@@ -1298,18 +1292,136 @@
             this.txtRemoveName.Size = new System.Drawing.Size(285, 47);
             this.txtRemoveName.TabIndex = 1;
             // 
-            // btnSearchFighter
+            // label15
             // 
-            this.btnSearchFighter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchFighter.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchFighter.Location = new System.Drawing.Point(389, 569);
-            this.btnSearchFighter.Name = "btnSearchFighter";
-            this.btnSearchFighter.Size = new System.Drawing.Size(287, 176);
-            this.btnSearchFighter.TabIndex = 27;
-            this.btnSearchFighter.Text = "Search";
-            this.btnSearchFighter.UseVisualStyleBackColor = true;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(589, 20);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(182, 39);
+            this.label15.TabIndex = 34;
+            this.label15.Text = "last Name:";
             // 
-            // Form1;
+            // txtUpdateLastName
+            // 
+            this.txtUpdateLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtUpdateLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUpdateLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtUpdateLastName.Location = new System.Drawing.Point(685, 18);
+            this.txtUpdateLastName.Name = "txtUpdateLastName";
+            this.txtUpdateLastName.Size = new System.Drawing.Size(285, 47);
+            this.txtUpdateLastName.TabIndex = 33;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(133, 59);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(464, 48);
+            this.label16.TabIndex = 32;
+            this.label16.Text = "Please enter the first name and lastname of \r\nthe fighter you wish to search for";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(50, 18);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(187, 39);
+            this.label39.TabIndex = 31;
+            this.label39.Text = "First Name:";
+            // 
+            // txtUpdateFirstName
+            // 
+            this.txtUpdateFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtUpdateFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUpdateFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtUpdateFirstName.Location = new System.Drawing.Point(153, 18);
+            this.txtUpdateFirstName.Name = "txtUpdateFirstName";
+            this.txtUpdateFirstName.Size = new System.Drawing.Size(285, 47);
+            this.txtUpdateFirstName.TabIndex = 30;
+            // 
+            // btnUpdateSearch
+            // 
+            this.btnUpdateSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateSearch.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateSearch.Location = new System.Drawing.Point(683, 59);
+            this.btnUpdateSearch.Name = "btnUpdateSearch";
+            this.btnUpdateSearch.Size = new System.Drawing.Size(287, 27);
+            this.btnUpdateSearch.TabIndex = 35;
+            this.btnUpdateSearch.Text = "Search";
+            this.btnUpdateSearch.UseVisualStyleBackColor = true;
+            this.btnUpdateSearch.Click += new System.EventHandler(this.btnUpdateSearch_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(585, 503);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(171, 39);
+            this.label27.TabIndex = 36;
+            this.label27.Text = "FightStyle:";
+            // 
+            // txtRemoveSearch
+            // 
+            this.txtRemoveSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtRemoveSearch.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRemoveSearch.Location = new System.Drawing.Point(683, 50);
+            this.txtRemoveSearch.Name = "txtRemoveSearch";
+            this.txtRemoveSearch.Size = new System.Drawing.Size(287, 27);
+            this.txtRemoveSearch.TabIndex = 42;
+            this.txtRemoveSearch.Text = "Search";
+            this.txtRemoveSearch.UseVisualStyleBackColor = true;
+            this.txtRemoveSearch.Click += new System.EventHandler(this.txtRemoveSearch_Click);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(589, 11);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(182, 39);
+            this.label28.TabIndex = 41;
+            this.label28.Text = "last Name:";
+            // 
+            // txtremoveLastName
+            // 
+            this.txtremoveLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtremoveLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtremoveLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtremoveLastName.Location = new System.Drawing.Point(685, 9);
+            this.txtremoveLastName.Name = "txtremoveLastName";
+            this.txtremoveLastName.Size = new System.Drawing.Size(285, 47);
+            this.txtremoveLastName.TabIndex = 40;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(133, 50);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(464, 48);
+            this.label40.TabIndex = 39;
+            this.label40.Text = "Please enter the first name and lastname of \r\nthe fighter you wish to search for";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(50, 9);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(187, 39);
+            this.label41.TabIndex = 38;
+            this.label41.Text = "First Name:";
+            // 
+            // txtremoveFirstName
+            // 
+            this.txtremoveFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtremoveFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtremoveFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
+            this.txtremoveFirstName.Location = new System.Drawing.Point(153, 9);
+            this.txtremoveFirstName.Name = "txtremoveFirstName";
+            this.txtremoveFirstName.Size = new System.Drawing.Size(285, 47);
+            this.txtremoveFirstName.TabIndex = 37;
+            // 
+            // MongoUI
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
@@ -1324,7 +1436,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "MongoUI";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -1403,13 +1515,7 @@
         private System.Windows.Forms.TextBox txtUpdateWeightClass;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtUpdateName;
-        private System.Windows.Forms.Label lblUpdateSearch;
-        private System.Windows.Forms.TextBox txtUpdateSearch;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panelSearch2;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txtSearchSearch;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtSearchFightStyle;
         private System.Windows.Forms.Label label18;
@@ -1431,9 +1537,6 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox txtSearchName;
         private System.Windows.Forms.Panel panelRemove;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox txtRemoveSearch;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox txtRemoveFightStyle;
         private System.Windows.Forms.Button btnDeleteFighter;
@@ -1456,6 +1559,24 @@
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.TextBox txtRemoveName;
         private System.Windows.Forms.Button btnSearchFighter;
+        private System.Windows.Forms.Label lblSearchlastName;
+        private System.Windows.Forms.TextBox txtSearchLastName;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblSearchFirstName;
+        private System.Windows.Forms.TextBox txtSearchFirstName;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtUpdateLastName;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.TextBox txtUpdateFirstName;
+        private System.Windows.Forms.Button btnUpdateSearch;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Button txtRemoveSearch;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox txtremoveLastName;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox txtremoveFirstName;
     }
 }
 

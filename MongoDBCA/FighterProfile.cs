@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MongoDBCA
 {
-    public class FigtherProfile
+    public class FighterProfile
     {
         [BsonRepresentation(BsonType.ObjectId)] 
         public string _id { get; set; }
@@ -27,8 +27,6 @@ namespace MongoDBCA
 
         public string WeightClass { get; set; }
 
-        public FightStyle PrimaryFightStyle { get; set; }
-
-        public List<FightStyle> AllFightStyle { get; set; }
+        public FightStyle FightStyle { get; set; }
     }
 }

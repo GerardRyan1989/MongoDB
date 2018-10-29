@@ -191,7 +191,7 @@
             this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(3, 625);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(265, 176);
+            this.button5.Size = new System.Drawing.Size(287, 176);
             this.button5.TabIndex = 5;
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;

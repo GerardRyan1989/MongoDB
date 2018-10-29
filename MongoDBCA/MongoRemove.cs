@@ -14,8 +14,8 @@ namespace MongoDBCA
         public void RemoveFighter(string fighter_id)
         {
             var client = new MongoClient("mongodb://localhost:27017");
-            var database = client.GetDatabase("cars");
-            var collection = database.GetCollection<FighterProfile>("cars");
+            var database = client.GetDatabase("Fighters");
+            var collection = database.GetCollection<FighterProfile>("Fighters");
 
             if (fighter_id != null)
             {

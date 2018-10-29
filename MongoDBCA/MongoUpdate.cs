@@ -13,8 +13,8 @@ namespace MongoDBCA
         {
 
             var client = new MongoClient("mongodb://localhost:27017");
-            var database = client.GetDatabase("cars");
-            var collection = database.GetCollection<FighterProfile>("cars");
+            var database = client.GetDatabase("Fighters");
+            var collection = database.GetCollection<FighterProfile>("Fighters");
 
             var filter = Builders<FighterProfile>.Filter.Eq(s => s._id, fighter._id);
             var result = await collection.ReplaceOneAsync(filter, fighter);

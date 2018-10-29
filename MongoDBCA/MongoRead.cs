@@ -20,9 +20,9 @@ namespace MongoDBCA
            
 
             var client = new MongoClient("mongodb://localhost:27017");
-            var database = client.GetDatabase("cars");
+            var database = client.GetDatabase("Fighters");
 
-            var collection = database.GetCollection<BsonDocument>("cars");
+            var collection = database.GetCollection<BsonDocument>("Fighters");
 
 
             if(firstname != "" && lastName != "")

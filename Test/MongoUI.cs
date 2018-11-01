@@ -1,5 +1,6 @@
 ﻿using MongoDBCA;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -43,8 +44,14 @@ namespace Test
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            panelAdd.Visible = false;
+
             panelUpdate.Visible = true;
+
+            panelSearch2.Visible = false;       
+            panelRemove.Visible = false;
+            panelAdd.Visible = false;
+            HomePanel.Visible = false;
+            panelMapReduce.Visible = false;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -55,6 +62,7 @@ namespace Test
             panelRemove.Visible = false;
             panelSearch2.Visible = false;
             HomePanel.Visible = false;
+            panelMapReduce.Visible = false;
 
         }
 
@@ -66,6 +74,7 @@ namespace Test
             HomePanel.Location = new Point(296, 70);
             panelRemove.Location = new Point(296, 70);
             panelSearch2.Location = new Point(296, 70);
+            panelMapReduce.Location = new Point(296, 76);
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -76,6 +85,7 @@ namespace Test
             panelAdd.Visible = false;
             panelSearch2.Visible = false;
             HomePanel.Visible = false;
+            panelMapReduce.Visible = false;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -86,6 +96,7 @@ namespace Test
             panelRemove.Visible = false;
             panelAdd.Visible = false;
             HomePanel.Visible = false;
+            panelMapReduce.Visible = false;
         }
 
         private void BtnAddFigther_Click(object sender, EventArgs e)
@@ -435,12 +446,45 @@ namespace Test
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnMapReduce_Click(object sender, EventArgs e)
         {
-            MongoMapReduce map= new MongoMapReduce();
+
+            panelMapReduce.Visible = true;
+
+            panelUpdate.Visible = true;
+            panelSearch2.Visible = false;
+            panelRemove.Visible = false;
+            panelAdd.Visible = false;
+            HomePanel.Visible = false;
+           
+        }
+
+        private async void btnMapReducePerform_Click(object sender, EventArgs e)
+        {
+            MongoMapReduce map = new MongoMapReduce();
+            var results = await map.getMapReduce();
+            List<dynamic> mapping = new List<dynamic>();
 
 
-            map.getMapReduce();
+          
+
+            foreach(var result in results)
+            {
+
+                var resultDisplayed = new ResultDisplayed
+                {
+                    WeightClass = result.WeightClass.ToString(),
+                    TotalFighters = result.value.TotalFighter.ToString(),
+                    AverageHeightInCentimetres = result.value.AverageHeight.ToString()
+
+                };
+
+                mapping.Add(resultDisplayed);
+            }
+
+
+            dataGrid.DataSource = mapping;
+            dataGrid.AutoResizeColumns();
         }
     }
 }

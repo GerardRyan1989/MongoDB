@@ -1,12 +1,15 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
+using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace MongoDBCA
 {
     public class MongoMapReduce
     {
-        public async void getMapReduce()
+        public async Task<List<MapReduceReturned>> getMapReduce()
         {
             var client = new MongoClient("mongodb://localhost:27017");
             var database = client.GetDatabase("Fighters");
@@ -21,7 +24,6 @@ namespace MongoDBCA
                  "   }" +
                  "};" 
                 );
-
 
             BsonJavaScript reduce = new BsonJavaScript(
                 "function(key, values) {" +
@@ -38,12 +40,12 @@ namespace MongoDBCA
                 "};" 
             );
 
-
-
             BsonJavaScript finalize = new BsonJavaScript("" +
                 " function(key, value) {" +
-                "   value.average = value.totalHeight / value.count;" +
-                "   return value;" +
+                "var result = {count : 0, averageHeight: 0};" +
+                "   result.averageHeight = value.totalHeight / value.count;" +
+                "   result.count = value.count;;" +
+                "   return result;" +
                 "};" );
 
 
@@ -51,18 +53,21 @@ namespace MongoDBCA
             options.Finalize = finalize;
             options.OutputOptions = MapReduceOutputOptions.Inline;
 
-
-
-
-
-
-
             var results = collection.MapReduce<BsonDocument>(map, reduce, options).ToList();
+            List<MapReduceReturned> resultList = new List<MapReduceReturned>();
 
-            foreach (var result in results)
+            foreach (BsonDocument result in results)
             {
-                Console.WriteLine(result.ToJson());
+
+                var temp = result.ToJson();
+
+                MapReduceReturned mapReturned = JsonConvert.DeserializeObject<MapReduceReturned>(temp);
+
+                resultList.Add(mapReturned);
+
             }
+           
+            return resultList;
         }  
     }
 }

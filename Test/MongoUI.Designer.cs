@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MongoUI));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnMapReduce = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -147,6 +147,10 @@
             this.txtRemoveWeightClass = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.txtRemoveName = new System.Windows.Forms.TextBox();
+            this.panelMapReduce = new System.Windows.Forms.Panel();
+            this.dataGrid = new System.Windows.Forms.DataGridView();
+            this.btnMapReducePerform = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctMinimize)).BeginInit();
@@ -156,12 +160,14 @@
             this.panelUpdate.SuspendLayout();
             this.panelSearch2.SuspendLayout();
             this.panelRemove.SuspendLayout();
+            this.panelMapReduce.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.btnMapReduce);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.btnRemove);
             this.panel1.Controls.Add(this.btnSearch);
@@ -184,18 +190,18 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button5
+            // btnMapReduce
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(3, 625);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(287, 176);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnMapReduce.FlatAppearance.BorderSize = 0;
+            this.btnMapReduce.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMapReduce.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMapReduce.Location = new System.Drawing.Point(3, 625);
+            this.btnMapReduce.Name = "btnMapReduce";
+            this.btnMapReduce.Size = new System.Drawing.Size(287, 176);
+            this.btnMapReduce.TabIndex = 5;
+            this.btnMapReduce.Text = "Map Reduce";
+            this.btnMapReduce.UseVisualStyleBackColor = true;
+            this.btnMapReduce.Click += new System.EventHandler(this.btnMapReduce_Click);
             // 
             // btnUpdate
             // 
@@ -393,9 +399,9 @@
             this.lblHeight.AutoSize = true;
             this.lblHeight.Location = new System.Drawing.Point(580, 152);
             this.lblHeight.Name = "lblHeight";
-            this.lblHeight.Size = new System.Drawing.Size(214, 39);
+            this.lblHeight.Size = new System.Drawing.Size(202, 39);
             this.lblHeight.TabIndex = 12;
-            this.lblHeight.Text = "Height(Ft,In):";
+            this.lblHeight.Text = "Height(cm):";
             // 
             // txtHeight
             // 
@@ -574,7 +580,7 @@
             this.panelUpdate.Controls.Add(this.txtUpdateWeightClass);
             this.panelUpdate.Controls.Add(this.label10);
             this.panelUpdate.Controls.Add(this.txtUpdateName);
-            this.panelUpdate.Location = new System.Drawing.Point(1385, 73);
+            this.panelUpdate.Location = new System.Drawing.Point(2529, 74);
             this.panelUpdate.Name = "panelUpdate";
             this.panelUpdate.Size = new System.Drawing.Size(1049, 918);
             this.panelUpdate.TabIndex = 24;
@@ -735,9 +741,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(565, 212);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(214, 39);
+            this.label5.Size = new System.Drawing.Size(202, 39);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Height(Ft,In):";
+            this.label5.Text = "Height(cm):";
             // 
             // txtUpdateHeight
             // 
@@ -1021,9 +1027,9 @@
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(565, 212);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(214, 39);
+            this.label21.Size = new System.Drawing.Size(202, 39);
             this.label21.TabIndex = 12;
-            this.label21.Text = "Height(Ft,In):";
+            this.label21.Text = "Height(cm):";
             // 
             // txtSearchHeight
             // 
@@ -1320,9 +1326,9 @@
             this.label33.AutoSize = true;
             this.label33.Location = new System.Drawing.Point(565, 212);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(214, 39);
+            this.label33.Size = new System.Drawing.Size(202, 39);
             this.label33.TabIndex = 12;
-            this.label33.Text = "Height(Ft,In):";
+            this.label33.Text = "Height(cm):";
             // 
             // txtRemoveheight
             // 
@@ -1429,11 +1435,55 @@
             this.txtRemoveName.Size = new System.Drawing.Size(285, 47);
             this.txtRemoveName.TabIndex = 1;
             // 
+            // panelMapReduce
+            // 
+            this.panelMapReduce.Controls.Add(this.label27);
+            this.panelMapReduce.Controls.Add(this.dataGrid);
+            this.panelMapReduce.Controls.Add(this.btnMapReducePerform);
+            this.panelMapReduce.Location = new System.Drawing.Point(1385, 74);
+            this.panelMapReduce.Name = "panelMapReduce";
+            this.panelMapReduce.Size = new System.Drawing.Size(1049, 918);
+            this.panelMapReduce.TabIndex = 28;
+            // 
+            // dataGrid
+            // 
+            this.dataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrid.Location = new System.Drawing.Point(423, 40);
+            this.dataGrid.Name = "dataGrid";
+            this.dataGrid.RowTemplate.Height = 33;
+            this.dataGrid.Size = new System.Drawing.Size(577, 476);
+            this.dataGrid.TabIndex = 20;
+            // 
+            // btnMapReducePerform
+            // 
+            this.btnMapReducePerform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMapReducePerform.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMapReducePerform.Location = new System.Drawing.Point(389, 551);
+            this.btnMapReducePerform.Name = "btnMapReducePerform";
+            this.btnMapReducePerform.Size = new System.Drawing.Size(287, 176);
+            this.btnMapReducePerform.TabIndex = 19;
+            this.btnMapReducePerform.Text = "Map Reduce";
+            this.btnMapReducePerform.UseVisualStyleBackColor = true;
+            this.btnMapReducePerform.Click += new System.EventHandler(this.btnMapReducePerform_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(210, 52);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(387, 312);
+            this.label27.TabIndex = 21;
+            this.label27.Text = "All Fighter over 30 \r\nyears of age\r\nare displayed here \r\nand catogerized by \r\nthe" +
+    "ir weight class \r\nand an avergae height\r\nfor the Weight class \r\nis shown also.\r\n" +
+    "";
+            // 
             // MongoUI
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(2884, 1759);
+            this.Controls.Add(this.panelMapReduce);
             this.Controls.Add(this.panelRemove);
             this.Controls.Add(this.panelSearch2);
             this.Controls.Add(this.panelUpdate);
@@ -1463,6 +1513,9 @@
             this.panelSearch2.PerformLayout();
             this.panelRemove.ResumeLayout(false);
             this.panelRemove.PerformLayout();
+            this.panelMapReduce.ResumeLayout(false);
+            this.panelMapReduce.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1471,7 +1524,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnMapReduce;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnSearch;
@@ -1587,6 +1640,10 @@
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.TextBox txtremoveFirstName;
+        private System.Windows.Forms.Panel panelMapReduce;
+        private System.Windows.Forms.DataGridView dataGrid;
+        private System.Windows.Forms.Button btnMapReducePerform;
+        private System.Windows.Forms.Label label27;
     }
 }
 

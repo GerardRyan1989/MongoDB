@@ -434,5 +434,13 @@ namespace Test
                 this.SetDesktopLocation(mouseX, mouseY);
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MongoMapReduce map= new MongoMapReduce();
+
+
+            map.getMapReduce();
+        }
     }
 }

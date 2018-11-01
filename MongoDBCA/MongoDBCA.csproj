@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="FightRecord.cs" />
     <Compile Include="FightStyle.cs" />
+    <Compile Include="MongoMapReduce.cs" />
     <Compile Include="MongoAdd.cs" />
     <Compile Include="MongoRead.cs" />
     <Compile Include="MongoRemove.cs" />

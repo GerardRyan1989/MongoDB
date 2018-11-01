@@ -24,7 +24,7 @@ namespace MongoDBCA
 
             var collection = database.GetCollection<BsonDocument>("Fighters");
 
-
+            
             if(firstname != "" && lastName != "")
             {
                 var filter = Builders<BsonDocument>.Filter.Eq("Name", firstname + " " + lastName);

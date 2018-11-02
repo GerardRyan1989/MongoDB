@@ -27,6 +27,8 @@ namespace Test
             panelAdd.Visible = false;
             panelRemove.Visible = false;
             panelSearch2.Visible = false;
+            panelMapReduce.Visible = false;
+
             HomePanel.Visible = true;
 
         }
@@ -451,7 +453,7 @@ namespace Test
 
             panelMapReduce.Visible = true;
 
-            panelUpdate.Visible = true;
+            panelUpdate.Visible = false;
             panelSearch2.Visible = false;
             panelRemove.Visible = false;
             panelAdd.Visible = false;
@@ -475,7 +477,7 @@ namespace Test
                 {
                     WeightClass = result.WeightClass.ToString(),
                     TotalFighters = result.value.TotalFighter.ToString(),
-                    AverageHeightInCentimetres = result.value.AverageHeight.ToString()
+                    AverageHeightInCentimetres = Math.Round(result.value.AverageHeight, 2).ToString()
 
                 };
 

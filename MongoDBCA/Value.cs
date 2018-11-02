@@ -9,6 +9,6 @@ namespace MongoDBCA
         public string TotalFighter { get; set; }
 
         [JsonProperty("averageHeight")]
-        public string AverageHeight { get; set; }
+        public double AverageHeight { get; set; }
     }
 }

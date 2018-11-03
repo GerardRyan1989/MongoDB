@@ -15,7 +15,6 @@ namespace MongoDBCA
             var database = client.GetDatabase("Fighters");
             var collection = database.GetCollection<FighterProfile>("Fighters");
 
-
             fighter._id = ObjectId.GenerateNewId().ToString();
 
             try

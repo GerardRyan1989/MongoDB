@@ -34,9 +34,6 @@ namespace MongoDBCA
             {
                 MessageBox.Show("No matching records found to removes!");
             }
-
-
-
         }
     }
 }
